@@ -1,8 +1,18 @@
+## git clone 分支
+
+- clone指定分支
+  - 方法1`git clone  -b js gitCodeRepoURL.git`
+  - 方法2 
+    - `git init` 初始化
+    - `git remote add origin gitCodeRepoURL.git` 与远程代码仓库建立连接
+    - `git fetch origin js` 将远程分支拉取到本地
+    - 太啰嗦了,直接用第一种就好了[git拉取指定分支的三种方法](https://www.jianshu.com/p/856ce249ed78)
+
 ## git 问题 [Everything up-to-date解决](https://blog.csdn.net/myhuashengmi/article/details/52197566)
 
 
 
-## git quit<enter> 同 exit vim怎么退出
+## git quit\<enter> 同 exit vim怎么退出
 
 - :qa!  按回车  退出vim
 
