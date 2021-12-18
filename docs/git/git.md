@@ -1,3 +1,40 @@
+##  git 初始化后 连接远程仓库
+
+- git remote add origin https://github.com/JadestarHan/book.git
+- git remote -v  查看origin连接的是那个仓库
+- 然后git branch 
+- 然后就可以推送了 push 
+
+## git 问题 fatal: Not a valid object name: 'master'.
+
+- 描述  一个非法的master 本地还没有创建master
+
+- `add file`
+
+- `add commit -m"msg"`
+
+- 此时本地仓库主干master创建成功
+
+- 创建新分支`git branch dev`
+
+- 切换分支`git checkout dev`
+
+- `git push origin dev`
+
+- [git push问题](https://www.cnblogs.com/qianqiannian/p/6008140.html)
+
+  ``````
+  $ git push s10
+  fatal: 's10' does not appear to be a git repository
+  fatal: Could not read from remote repository.
+  
+  Please make sure you have the correct access rights
+  and the repository exists.
+  错误是因为 应该是git push origin s10,因为是远程,命令少写了一个origin标识符
+  ``````
+
+
+
 ## git clone 分支
 
 - clone指定分支
